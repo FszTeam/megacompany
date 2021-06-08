@@ -1,0 +1,80 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+services:
+    label: fszteam.megacompany::lang.service.label
+    manage:
+        form: $/fszteam/megacompany/models/project/fields_modal.yaml
+        list: $/fszteam/megacompany/models/service/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/service/columns.yaml
+        toolbarButtons: add|remove
+        showSearch: true
+
+projects:
+    label: fszteam.megacompany::lang.project.label
+    manage:
+        form: $/fszteam/megacompany/models/project/fields_modal.yaml
+        list: $/fszteam/megacompany/models/project/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/project/columns.yaml
+        toolbarButtons: add|remove
+        showSearch: true
+
+galleries:
+    label: fszteam.megacompany::lang.gallery.label
+    manage:
+        form: $/fszteam/megacompany/models/project/fields_modal.yaml
+        list: $/fszteam/megacompany/models/gallery/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/gallery/columns.yaml
+        toolbarButtons: add|remove
+        showSearch: true
+
+tags:
+    label: fszteam.megacompany::lang.tag.label
+    manage:
+        form: $/fszteam/megacompany/models/tag/fields_modal.yaml
+        list: $/fszteam/megacompany/models/tag/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/tag/columns.yaml
+        toolbarButtons: create|add|remove
+        showSearch: true
+
+categories:
+    label: fszteam.megacompany::lang.category.label
+    manage:
+        form: $/fszteam/megacompany/models/category/fields_modal.yaml
+        list: $/fszteam/megacompany/models/category/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/category/columns.yaml
+        toolbarButtons: create|add|remove
+        showSearch: true
+
+roles:
+    label: fszteam.megacompany::lang.role.label
+    manage:
+        form: $/fszteam/megacompany/models/role/fields_modal.yaml
+        list: $/fszteam/megacompany/models/role/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/role/columns.yaml
+        toolbarButtons: create|add|remove
+        showSearch: true
+
+employees:
+    label: fszteam.megacompany::lang.employee.label
+    manage:
+        form: $/fszteam/megacompany/models/employee/fields_modal.yaml
+        list: $/fszteam/megacompany/models/employee/columns.yaml
+        showSearch: true
+    view:
+        list: $/fszteam/megacompany/models/employee/columns.yaml
+        toolbarButtons: add|remove
+        showSearch: true

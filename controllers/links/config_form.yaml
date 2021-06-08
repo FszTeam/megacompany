@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.link.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/link/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Link
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/links
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.link.create_title
+    redirect: fszteam/megacompany/links/update/:id
+    redirectClose: fszteam/megacompany/links
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.link.update_title
+    redirect: fszteam/megacompany/links
+    redirectClose: fszteam/megacompany/links
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.link.preview_title

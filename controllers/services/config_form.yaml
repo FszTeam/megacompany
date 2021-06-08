@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.service.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/service/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Service
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/services
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.service.create_title
+    redirect: fszteam/megacompany/services/update/:id
+    redirectClose: fszteam/megacompany/services
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.service.update_title
+    redirect: fszteam/megacompany/services
+    redirectClose: fszteam/megacompany/services
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.service.preview_title

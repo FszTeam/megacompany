@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.tag.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/tag/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Tag
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/tags
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.tag.create_title
+    redirect: fszteam/megacompany/tags/update/:id
+    redirectClose: fszteam/megacompany/tags
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.tag.update_title
+    redirect: fszteam/megacompany/tags
+    redirectClose: fszteam/megacompany/tags
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.tag.preview_title

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.category.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/category/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Category
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/categories
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.category.create_title
+    redirect: fszteam/megacompany/categories/update/:id
+    redirectClose: fszteam/megacompany/categories
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.category.update_title
+    redirect: fszteam/megacompany/categories
+    redirectClose: fszteam/megacompany/categories
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.category.preview_title

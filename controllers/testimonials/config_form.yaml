@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.testimonial.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/testimonial/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Testimonial
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/testimonials
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.testimonial.create_title
+    redirect: fszteam/megacompany/testimonials/update/:id
+    redirectClose: fszteam/megacompany/testimonials
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.testimonial.update_title
+    redirect: fszteam/megacompany/testimonials
+    redirectClose: fszteam/megacompany/testimonials
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.testimonial.preview_title

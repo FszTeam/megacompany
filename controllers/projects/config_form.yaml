@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.project.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/project/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Project
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/projects
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.project.create_title
+    redirect: fszteam/megacompany/projects/update/:id
+    redirectClose: fszteam/megacompany/projects
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.project.update_title
+    redirect: fszteam/megacompany/projects
+    redirectClose: fszteam/megacompany/projects
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.project.preview_title

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: fszteam.megacompany::lang.role.label
+
+# Model Form Field configuration
+form: $/fszteam/megacompany/models/role/fields.yaml
+
+# Model Class name
+modelClass: FszTeam\MegaCompany\Models\Role
+
+# Default redirect location
+defaultRedirect: fszteam/megacompany/roles
+
+# Create page
+create:
+    title: fszteam.megacompany::lang.role.create_title
+    redirect: fszteam/megacompany/roles/update/:id
+    redirectClose: fszteam/megacompany/roles
+
+# Update page
+update:
+    title: fszteam.megacompany::lang.role.update_title
+    redirect: fszteam/megacompany/roles
+    redirectClose: fszteam/megacompany/roles
+
+# Preview page
+preview:
+    title: fszteam.megacompany::lang.role.preview_title
