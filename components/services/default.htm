@@ -1,0 +1,38 @@
+
+<!--  latest Servies Section  -->
+  <!-- CSS in css/servicetab.css -->      
+ <section class="section-md " data-content="Services">   
+  <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 100,  &quot;smoothness&quot;: 30}">
+        <img src="{{'assets/images/bg-decor-1.png'|theme}}" alt=""/>
+        </div>
+        <div class="bg-decor d-flex align-items-end" data-parallax-scroll="{&quot;x&quot;: -150, &quot;from-scroll&quot;: 420, &quot;smoothness&quot;: 30}">
+        <img src="{{'assets/images/bg-decor-2.png'|theme}}" alt=""/>
+        </div>
+        <div class="bg-decor" data-parallax-scroll="{&quot;x&quot;: 80, &quot;y&quot;: 80,  &quot;smoothness&quot;: 30}">
+        <img src="{{'assets/images/bg-decor-3.png'|theme}}" alt=""/>
+        </div>
+     <div class="container">
+     <div class="text-center">
+     <h4 class="heading-decorated">Our Services</h4>
+            <p >Our megacompany offers flexible & reliable website templates as well as extensive customer support so you don’t have to worry about hiring an expensive web design megacompany. We build all types of web templates and all of them can be used as a basis for your website.</p>
+            </div>
+	<div class="row" >
+	{% for rec in services %}
+		<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12" >
+						<div class="our-services-wrapper mb-60">
+							<div class="services-inner" style="height:400px">
+								<div class="our-services-img">
+								<img src="{{rec.picture.path}}" width="68px" alt=""/>
+								</div>
+								<div class="our-services-text">
+									<h4><a href="{{ 'service'|page({ slug: rec.slug }) }}">{{rec.name}}</a></h4>
+									{{rec.description|raw}}
+								</div>
+							</div>
+						</div>
+					</div>
+			{% endfor %}
+					
+	</div>
+</div>
+</section>

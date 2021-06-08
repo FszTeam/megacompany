@@ -1,2 +1,1 @@
-# megacompany
-This is free October CMS Plugin
+# octobercms.megacompany

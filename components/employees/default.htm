@@ -1,0 +1,39 @@
+
+<section class="section-md bg-gray-lighter text-center " data-content="Team">
+    <div class="bg-decor d-flex align-items-start" data-parallax-scroll="{&quot;y&quot;: -50,  &quot;smoothness&quot;: 30}">
+    <img src="{{'assets/images/bg-decor-7.png'|theme}}" alt=""/>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h4 class="heading-decorated">Meet Our Team</h4>
+        </div>
+      </div>
+      <div class="row row-60"> 
+        <!-- Owl Carousel-->
+        <div class="owl-carousel owl-carousel-spacing-2" data-items="1" data-sm-items="2" data-xl-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-margin="30" data-mouse-drag="false" data-loop="true" data-autoplay="true">
+        {% for emp in __SELF__.employees %}
+          <div class="owl-item">
+            <!-- Post classic-->
+            <article class="post-classic post-minimal"><a class="post-minimal-image" href="{{emp.url}}">
+            <img src="{{emp.picture.thumb(300,300,{'mode':'crop'}) }}" alt="{{ emp.first_name }} {{emp.last_name }}"/></a>
+              <div class="post-classic-title text-center" >
+                <h6><a href="{{emp.url}}">{{ emp.first_name }} {{emp.last_name }}</a></h6>
+              </div>
+              <div class="post-meta text-center">
+                <div class="group">
+                    {% for i,role in emp.roles%}
+                    {{ role.name}}
+                    {% endfor %}
+                </div>
+              </div>
+          
+            </article>
+          </div>
+          {% endfor %}
+   
+       
+        </div>
+      </div>
+    </div>
+  </section>
