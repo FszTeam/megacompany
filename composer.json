@@ -1,5 +1,5 @@
 {
-    "name": "fszteam/megacompany",
+    "name": "fszteam/megacompany-plugin",
     "type": "october-plugin",
     "description": "Complete Company Site Covergae",
     "keywords": ["october", "cms", "demo", "plugin", "api"],
