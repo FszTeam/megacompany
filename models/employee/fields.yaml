@@ -1,0 +1,91 @@
+fields:
+    first_name:
+        label: 'fszteam.megacompany::lang.labels.first_name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    last_name:
+        label: 'fszteam.megacompany::lang.labels.last_name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    quote:
+        label: 'fszteam.megacompany::lang.labels.quote'
+        span: auto
+        type: text
+    published_at:
+        label: 'fszteam.megacompany::lang.labels.published_at'
+        default: now
+        type: datepicker
+        mode: date
+        span: auto
+    slug:
+        label: 'fszteam.megacompany::lang.labels.slug'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+tabs:
+    fields:
+        picture:
+            label: 'fszteam.megacompany::lang.labels.picture'
+            type: fileupload
+            mode: image
+            span: right
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.information'
+        born_at:
+            label: 'fszteam.megacompany::lang.labels.born_at'
+            type: datepicker
+            default: 'today - 30 years'
+            mode: date
+            minDate: -2208988800
+            span: left
+            tab: 'fszteam.megacompany::lang.labels.information'
+        email:
+            label: 'fszteam.megacompany::lang.labels.email'
+            span: left
+            tab: 'fszteam.megacompany::lang.labels.information'
+            type: text
+        phone:
+            label: 'fszteam.megacompany::lang.labels.phone'
+            span: left
+            tab: 'fszteam.megacompany::lang.labels.information'
+            type: text
+        description:
+            type: richeditor
+            size: giant
+            label: 'fszteam.megacompany::lang.labels.description'
+            span: full
+            tab: 'fszteam.megacompany::lang.labels.description'
+        roles:
+            type: partial
+            path: $/fszteam/megacompany/controllers/relations/roles.htm
+            tab: 'fszteam.megacompany::lang.roles.menu_label'
+        social_media:
+            type: repeater
+            tab: 'fszteam.megacompany::lang.labels.social'
+            prompt: 'fszteam.megacompany::lang.labels.social_prompt'
+            form:
+                fields:
+                    name:
+                        label: 'fszteam.megacompany::lang.labels.name'
+                        comment: 'fszteam.megacompany::lang.employees.name_comment'
+                        span: auto
+                        type: text
+                    icon:
+                        label: 'fszteam.megacompany::lang.labels.icon'
+                        span: auto
+                        default: fa-
+                        comment: 'fszteam.megacompany::lang.projects.icon_comment'
+                        tab: 'fszteam.megacompany::lang.labels.description'
+                        type: text
+                    username:
+                        label: 'fszteam.megacompany::lang.labels.username'
+                        span: auto
+                        type: text
+                    url:
+                        label: 'fszteam.megacompany::lang.labels.user_url'
+                        span: auto
+                        type: text

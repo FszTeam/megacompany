@@ -1,0 +1,33 @@
+fields:
+    content:
+        label: 'fszteam.megacompany::lang.labels.content'
+        size: ''
+        span: full
+        type: textarea
+    picture:
+        label: 'fszteam.megacompany::lang.labels.picture'
+        mode: image
+        imageWidth: 260
+        imageHeight: 260
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: right
+        type: fileupload
+    source:
+        label: 'fszteam.megacompany::lang.labels.source'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    url:
+        label: 'fszteam.megacompany::lang.labels.url'
+        span: left
+        default: 'http://'
+        type: text
+    published_at:
+        label: 'fszteam.megacompany::lang.labels.published_at'
+        type: datepicker
+        default: now
+        mode: date
+        span: left

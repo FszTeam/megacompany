@@ -1,0 +1,80 @@
+fields:
+    name:
+        label: 'fszteam.megacompany::lang.labels.name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    published_at:
+        label: 'fszteam.megacompany::lang.labels.published_at'
+        type: datepicker
+        default: now
+        mode: date
+        span: auto
+    slug:
+        label: 'fszteam.megacompany::lang.labels.slug'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+tabs:
+    fields:
+        description:
+            type: richeditor
+            size: giant
+            label: 'fszteam.megacompany::lang.labels.description'
+            span: full
+            tab: 'fszteam.megacompany::lang.labels.description'
+        icon:
+            label: 'fszteam.megacompany::lang.labels.icon'
+            span: left
+            default: fa-
+            comment: 'fszteam.megacompany::lang.projects.icon_comment'
+            tab: 'fszteam.megacompany::lang.labels.description'
+            type: text
+        link:
+            label: 'fszteam.megacompany::lang.labels.link'
+            span: right
+            type: text
+            tab: 'fszteam.megacompany::lang.labels.description'
+        projects:
+            type: partial
+            path: $/fszteam/megacompany/controllers/relations/projects.htm
+            tab: 'fszteam.megacompany::lang.projects.menu_label'
+        picture:
+            label: 'fszteam.megacompany::lang.labels.picture'
+            type: fileupload
+            mode: image
+            span: left
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.attachments'
+        pictures:
+            label: 'fszteam.megacompany::lang.labels.pictures'
+            type: fileupload
+            mode: image
+            span: right
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.attachments'
+        files:
+            label: 'fszteam.megacompany::lang.labels.files'
+            type: fileupload
+            mode: file
+            span: right
+            tab: 'fszteam.megacompany::lang.labels.attachments'
+        tags:
+            span: full
+            path: $/fszteam/megacompany/controllers/relations/tags.htm
+            type: partial
+            tab: 'fszteam.megacompany::lang.tags.menu_label'
+        info:
+            label: 'Short Description'
+            size: small
+            span: full
+            type: textarea
+            tab: 'Short Description'
+        partial1:
+            span: auto
+            path: $/fszteam/megacompany/controllers/relations/categories.htm
+            type: partial
+            tab: 'Service Categories'

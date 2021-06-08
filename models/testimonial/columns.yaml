@@ -1,0 +1,18 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: fszteam.megacompany::lang.labels.id
+    source:
+        label: fszteam.megacompany::lang.labels.source
+    content:
+        label: fszteam.megacompany::lang.labels.content
+        select: concat(substr(content, 1, 50),"...")
+    published_at:
+        label: fszteam.megacompany::lang.labels.published_at
+        type: date
+    updated_at:
+        label: fszteam.megacompany::lang.labels.updated_at
+        type: date

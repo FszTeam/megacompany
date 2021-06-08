@@ -1,0 +1,53 @@
+fields:
+    name:
+        label: 'fszteam.megacompany::lang.labels.name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    published_at:
+        label: 'fszteam.megacompany::lang.labels.published_at'
+        default: now
+        type: datepicker
+        mode: date
+        span: auto
+    url:
+        label: 'fszteam.megacompany::lang.labels.url'
+        span: auto
+        default: 'http://'
+        type: text
+    icon:
+        label: 'fszteam.megacompany::lang.labels.icon'
+        span: auto
+        default: fa-
+        comment: 'fszteam.megacompany::lang.projects.icon_comment'
+        type: text
+    slug:
+        label: 'fszteam.megacompany::lang.labels.slug'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+tabs:
+    fields:
+        description:
+            type: richeditor
+            size: giant
+            label: 'fszteam.megacompany::lang.labels.description'
+            span: full
+            tab: 'fszteam.megacompany::lang.labels.description'
+        picture:
+            label: 'fszteam.megacompany::lang.labels.picture'
+            type: fileupload
+            mode: image
+            span: left
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.attachments'
+        pictures:
+            label: 'fszteam.megacompany::lang.labels.pictures'
+            type: fileupload
+            mode: image
+            span: right
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.attachments'

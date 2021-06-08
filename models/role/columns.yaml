@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: fszteam.megacompany::lang.labels.id
+    name:
+        label: fszteam.megacompany::lang.labels.name
+        searchable: true
+    published_at:
+        label: fszteam.megacompany::lang.labels.published_at
+        type: date
+    updated_at:
+        label: fszteam.megacompany::lang.labels.updated_at
+        type: date

@@ -1,0 +1,38 @@
+1.0.1:
+    - 'First version of MegaCompany'
+1.0.2:
+    - create_employees_table
+    - migration102.php
+1.0.3:
+    - 'Create roles table'
+    - migration103.php
+1.0.4:
+    - create_table_pivots
+    - migration104.php
+1.0.5:
+    - create_projects_table
+    - migration105.php
+1.0.6:
+    - create_services_table
+    - migration106.php
+1.0.7:
+    - create_tags_table
+    - migration107.php
+1.0.8:
+    - create_galleries_table
+    - migration108.php
+1.0.9:
+    - create_testimonials_table
+    - migration109.php
+1.0.10:
+    - create_links_table
+    - migration1010.php
+1.0.11:
+    - create_fszteam_company_categories_table
+    - migration1011.php
+1.0.12:
+    - 'add categoy_id_column in fszteam_company_pivots table'
+    - migration1012.php
+1.0.13:
+    - 'add info column in fszteam_company_services table'
+    - migration1013.php

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: fszteam.megacompany::lang.labels.name
+        span: auto
+    published_at:
+        label: fszteam.megacompany::lang.labels.published_at
+        type: datepicker
+        default: now
+        mode: date
+        span: auto
+
+tabs:
+  fields:
+    pictures:
+        label: fszteam.megacompany::lang.labels.pictures
+        type: fileupload
+        mode: image
+        span: full
+        imageHeight: 260
+        imageWidth: 260
+        label: fszteam.megacompany::lang.labels.pictures
+    description:
+        label: fszteam.megacompany::lang.labels.description
+        type: richeditor
+        size: giant
+        span: full
+        tab: fszteam.megacompany::lang.labels.description

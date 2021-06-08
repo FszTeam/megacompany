@@ -1,0 +1,74 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    first_name:
+        label: fszteam.megacompany::lang.labels.first_name
+        span: auto
+    last_name:
+        label: fszteam.megacompany::lang.labels.last_name
+        span: auto
+    quote:
+        label: fszteam.megacompany::lang.labels.quote
+        span: auto
+    published_at:
+        label: fszteam.megacompany::lang.labels.published_at
+        default: now
+        type: datepicker
+        mode: date
+        span: auto
+
+tabs:
+  fields:
+    picture:
+        label: fszteam.megacompany::lang.labels.picture
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 260
+        imageWidth: 260
+        tab: fszteam.megacompany::lang.labels.information
+    born_at:
+        label: fszteam.megacompany::lang.labels.born_at
+        type: datepicker
+        mode: date
+        minDate: 1900-01-01
+        span: left
+        tab: fszteam.megacompany::lang.labels.information
+    email:
+        label: fszteam.megacompany::lang.labels.email
+        span: left
+        tab: fszteam.megacompany::lang.labels.information
+    phone:
+        label: fszteam.megacompany::lang.labels.phone
+        span: left
+        tab: fszteam.megacompany::lang.labels.information
+    description:
+        type: richeditor
+        size: giant
+        label: fszteam.megacompany::lang.labels.description
+        span: full
+        tab: fszteam.megacompany::lang.labels.description
+    social_media:
+      type: repeater
+      tab: fszteam.megacompany::lang.labels.social
+      prompt: fszteam.megacompany::lang.labels.social_prompt
+      form:
+          fields:
+              name:
+                  label: fszteam.megacompany::lang.labels.name
+                  comment: fszteam.megacompany::lang.employees.name_comment
+                  span: auto
+              icon:
+                  label: fszteam.megacompany::lang.labels.icon
+                  span: auto
+                  default: fa-
+                  comment: fszteam.megacompany::lang.projects.icon_comment
+                  tab: fszteam.megacompany::lang.labels.description
+              username:
+                  label: fszteam.megacompany::lang.labels.username
+                  span: auto
+              url:
+                  label: fszteam.megacompany::lang.labels.user_url
+                  span: auto

@@ -1,0 +1,38 @@
+fields:
+    name:
+        label: 'fszteam.megacompany::lang.labels.name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    published_at:
+        label: 'fszteam.megacompany::lang.labels.published_at'
+        type: datepicker
+        default: now
+        mode: date
+        span: auto
+    slug:
+        label: 'fszteam.megacompany::lang.labels.slug'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+tabs:
+    fields:
+        pictures:
+            label: 'fszteam.megacompany::lang.labels.pictures'
+            type: fileupload
+            mode: image
+            span: full
+            imageHeight: 260
+            imageWidth: 260
+            tab: Misc
+        description:
+            label: 'fszteam.megacompany::lang.labels.description'
+            type: richeditor
+            size: giant
+            span: full
+            tab: 'fszteam.megacompany::lang.labels.description'
+        tags:
+            type: partial
+            path: $/fszteam/megacompany/controllers/relations/tags.htm
+            tab: 'fszteam.megacompany::lang.tags.menu_label'

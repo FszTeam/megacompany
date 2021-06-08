@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: fszteam.megacompany::lang.labels.name
+        span: auto
+    published_at:
+        label: fszteam.megacompany::lang.labels.published_at
+        default: now
+        type: datepicker
+        mode: date
+        span: auto
+tabs:
+  fields:
+    description:
+        type: richeditor
+        size: giant
+        label: fszteam.megacompany::lang.labels.description
+        span: full
+        tab: fszteam.megacompany::lang.labels.description

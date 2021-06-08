@@ -1,0 +1,137 @@
+fields:
+    name:
+        label: 'fszteam.megacompany::lang.megacompany.name'
+        span: auto
+        type: text
+    timing:
+        label: Timing
+        span: auto
+        type: text
+    email:
+        label: 'fszteam.megacompany::lang.labels.email'
+        span: auto
+        type: text
+    address:
+        label: 'fszteam.megacompany::lang.labels.address'
+        span: auto
+        type: text
+    phone:
+        label: 'fszteam.megacompany::lang.labels.phone'
+        span: auto
+        type: text
+    fax:
+        label: 'fszteam.megacompany::lang.labels.fax'
+        span: auto
+        type: text
+    contact:
+        label: 'fszteam.megacompany::lang.megacompany.contact'
+        type: dropdown
+        span: auto
+tabs:
+    fields:
+        logo:
+            label: 'fszteam.megacompany::lang.labels.logo'
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+            tab: 'fszteam.megacompany::lang.labels.logo'
+        story:
+            label: 'fszteam.megacompany::lang.megacompany.story'
+            size: giant
+            span: full
+            type: richeditor
+            tab: 'fszteam.megacompany::lang.megacompany.story'
+        social_media:
+            type: repeater
+            tab: 'fszteam.megacompany::lang.labels.social'
+            prompt: 'fszteam.megacompany::lang.labels.social_prompt'
+            form:
+                fields:
+                    name:
+                        label: 'fszteam.megacompany::lang.labels.name'
+                        comment: 'fszteam.megacompany::lang.employees.name_comment'
+                        span: auto
+                        type: text
+                    icon:
+                        label: 'fszteam.megacompany::lang.labels.icon'
+                        span: auto
+                        default: fa-
+                        comment: 'fszteam.megacompany::lang.projects.icon_comment'
+                        tab: 'fszteam.megacompany::lang.labels.description'
+                        type: text
+                    username:
+                        label: 'fszteam.megacompany::lang.labels.username'
+                        span: auto
+                        type: text
+                    url:
+                        label: 'fszteam.megacompany::lang.labels.user_url'
+                        span: auto
+                        type: text
+        street_name:
+            label: 'fszteam.megacompany::lang.labels.street_name'
+            tab: 'fszteam.megacompany::lang.labels.address'
+            span: auto
+            type: text
+        street_number:
+            label: 'fszteam.megacompany::lang.labels.street_number'
+            tab: 'fszteam.megacompany::lang.labels.address'
+            span: auto
+            type: text
+        zip:
+            label: 'fszteam.megacompany::lang.labels.zip'
+            tab: 'fszteam.megacompany::lang.labels.address'
+            span: auto
+            type: text
+        city:
+            label: 'fszteam.megacompany::lang.labels.city'
+            tab: 'fszteam.megacompany::lang.labels.address'
+            span: auto
+            type: text
+        latitude:
+            label: Latitude
+            span: left
+            default: '33.6158004'
+            type: text
+            tab: 'fszteam.megacompany::lang.labels.address'
+        longitude:
+            label: Longitude
+            span: auto
+            default: '72.8059095'
+            type: text
+            tab: 'fszteam.megacompany::lang.labels.address'
+        apiKey:
+            label: 'Google Map Api Key'
+            span: left
+            type: text
+            comment: 'https://developers.google.com/maps/documentation/javascript/get-api-key'
+            tab: 'fszteam.megacompany::lang.labels.address'
+        zoom:
+            label: 'Google Map Zoom'
+            span: right
+            default: '10'
+            type: text
+            tab: 'fszteam.megacompany::lang.labels.address'
+        about_us:
+            label: 'About Us'
+            size: giant
+            span: full
+            type: richeditor
+            tab: 'About Us'
+        maps:
+            label: Map
+            prompt: 'Add new map'
+            span: full
+            type: repeater
+            tab: Maps
+            form:
+                fields:
+                    location:
+                        label: 'Location Name'
+                        span: full
+                        type: text
+                    map_ifram:
+                        label: 'iframe src'
+                        size: small
+                        span: full
+                        type: textarea
